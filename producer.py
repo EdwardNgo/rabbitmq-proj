@@ -3,10 +3,10 @@ import time
 from datetime import datetime
 import uuid
 import json
-from settings import TOPIC, PRODUCE_TIME_INTERVAL_IN_SECOND
+from settings import TOPIC, PRODUCE_TIME_INTERVAL_IN_SECOND, getRabbitMqConfig
 
 def _producer():
-    sender = BasicSender()
+    sender = BasicSender(getRabbitMqConfig())
     try:
         while True:
             # Publish a message

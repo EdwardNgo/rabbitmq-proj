@@ -25,6 +25,16 @@ pip install -r requirements.txt
 
 ### Main
 
+Create .env file with this default value if you are using local rabbitmq or you can change it with yours
+
+```
+RABBITMQ_HOST=localhost
+RABBITMQ_PORT=5672
+RABBITMQ_USERNAME=guest
+RABBITMQ_PASSWORD=guest
+```
+
+
 Start producer
 
 ```
@@ -39,4 +49,4 @@ python consumer.py
 
 ### TODO
 
-We want to store the .env in some kind of format so I will leave it with a local config -> TBD
+We want to store the .env in some kind of format so I will leave it with a local config -> I choose .env

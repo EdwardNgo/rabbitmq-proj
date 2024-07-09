@@ -11,14 +11,7 @@ def callback(ch, method, properties, body):
 class BasicReceiver(BasicPikaClient):
 
     def __init__(self, configs: dict = None):
-        """
-
-        :param configs: Configurations for the pika client.
-        """
-        if configs is None:
-            super().__init__(host='localhost', port=5672, rabbitmq_user='guest', rabbitmq_password='guest')
-        else:
-            super().__init__(**configs)
+        super().__init__(**configs)
 
 
     def receive_message(self, queue):

@@ -11,10 +11,7 @@ class BasicSender(BasicPikaClient):
 
         :param configs: Configurations for the pika client.
         """
-        if configs is None:
-            super().__init__(host='localhost', port=5672, rabbitmq_user='guest', rabbitmq_password='guest')
-        else:
-            super().__init__(**configs)
+        super().__init__(**configs)
 
     def declare_queue(self, queue_name):
         logger.info(f"Trying to declare queue({queue_name})...")
