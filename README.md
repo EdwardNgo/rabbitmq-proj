@@ -36,3 +36,7 @@ Start consumer in other terminal
 ```
 python consumer.py
 ```
+
+### TODO
+
+We want to store the .env in some kind of format so I will leave it with a local config -> TBD
