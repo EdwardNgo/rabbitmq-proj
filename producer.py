@@ -1,4 +1,4 @@
-from basic_sender import BasicSender
+from base.basic_sender import BasicSender
 import time
 from datetime import datetime
 import uuid

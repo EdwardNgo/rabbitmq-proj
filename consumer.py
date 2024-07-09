@@ -1,4 +1,4 @@
-from basic_receiver import BasicReceiver
+from base.basic_receiver import BasicReceiver
 from settings import TOPIC
 
 def _receiver():

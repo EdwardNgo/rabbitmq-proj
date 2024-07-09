@@ -1,4 +1,4 @@
-from basic_client import BasicPikaClient
+from base.basic_client import BasicPikaClient
 import logging
 logger = logging.getLogger()
 logger.addHandler(logging.StreamHandler())
