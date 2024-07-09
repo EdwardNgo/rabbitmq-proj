@@ -17,6 +17,7 @@ Or
 virtualenv -p <your python version> venv
 ```
 
+Install python package
 ```
 source venv/bin/activate
 pip install -r requirements.txt
